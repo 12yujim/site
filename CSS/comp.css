@@ -237,12 +237,27 @@ html,body{
 }
 #me h1 {
 	margin-top: 100px;
-	font-size: 5em;
+	font-size: 10em;
 	font-style: bold;
 	color: white;
+	text-align: center;
 }
 #about p {
+	margin-top: 30px;
+	font-size: 2em;
 	color: white;
+	text-align: center;
+}
+.interests_title {
+	display: inline-block;
+	position: fixed;
+	margin-top: 300px;
+	width: 700px;
+	height: 203px;
+	margin-left: 400px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 60%;
 }
 .projects_txt {
 	position: fixed;
@@ -255,6 +270,10 @@ html,body{
 	-webkit-perspective:1200px;
 	perspective:1200px;
 }
+.project_info {
+	display: inline-block;
+	vertical-align: middle;
+}
 .skill_level {
 	position: relative;
 	text-align: right;
@@ -265,16 +284,6 @@ html,body{
 	line-height: 2;
 	-webkit-perspective:1200px;
 	perspective:1200px;
-}
-.interests_back {
-	position: fixed;
-	top: 150px;
-	left: 300px;
-	background-color: blue;
-	height: 500px;
-	width: 500px;
-	border-radius: 100px;
-	z-index: 1;
 }
 /*.txt{
 	position:fixed;
@@ -298,14 +307,29 @@ html,body{
 	-ms-transform-origin:right;
 	transform-origin:right
 }
-.interests_txt {
+.interests_back1 {
 	position: fixed;
+	top: 150px;
+	left: 300px;
+	background-color: blue;
+	height: 400px;
+	width: 500px;
+	border-radius: 100px;
+	z-index: 1;
+}
+/*#interest_title {
+	font-size: 40px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+}*/
+.interests_txt {
 	z-index: 2;
-	top: 180px;
-	left: 340px;
 	right: 0;
-	font-size: 30px;
+	font-size: 25px;
 	color: white;
+	margin-left: 15px;
+	line-height: 10px
 	-webkit-perspective:1200px;
 	perspective:1200px;
 }

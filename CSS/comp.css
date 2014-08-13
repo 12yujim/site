@@ -147,18 +147,6 @@ html,body{
 .white_ver{
 	background:#fff
 }
-.round{
-	position:fixed;
-	width:850px;
-	height:850px;
-	margin-top:-425px;
-	margin-left:-425px;
-	top:50%;
-	left:50%;
-	background:#fff;
-	border-radius:50%;
-	z-index:1
-}
 .rect {
 	position: fixed;
 	width: 300px;
@@ -248,31 +236,74 @@ html,body{
 	color: white;
 	text-align: center;
 }
-.interests_title {
-	display: inline-block;
+.flip_title {
 	position: fixed;
-	margin-top: 300px;
+	margin: auto;
+	top: 0; left: 0; right: 0; bottom: 0;
 	width: 700px;
 	height: 203px;
-	margin-left: 400px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 60%;
 }
-.projects_txt {
+/*.interests_back1 {
 	position: fixed;
+	top: 150px;
+	left: 300px;
+	background-color: blue;
+	height: 400px;
+	width: 500px;
+	border-radius: 100px;
+	z-index: 1;
+}
+#interest_title {
+	font-size: 40px;
+	margin-top: 15px;
+	margin-bottom: 20px;
 	text-align: center;
-	z-index: 2;
-	top: 350px;
-	left: 0px;
-	right: 0;
-	font-size: 70px;
+}*/
+.interests_txt {
+	position: fixed;
+	width: 70%;
+	margin: auto;
+	top: 300px; left: 0; right: 0; bottom: 0;
+	font-size: 20px;
 	-webkit-perspective:1200px;
 	perspective:1200px;
 }
-.project_info {
-	display: inline-block;
+.project {
+	/* FIX THE round{ STUFF FOR MOBILE */
+	position:fixed;
+	width:500px;
+	height:500px;
+	background:#fff;
+	border-radius:50%;
+	z-index:1
+}
+.project1 {
+	margin-top: 50px;
+	left: 200px;
+}
+.project2 {
+	margin-top: 50px;
+	right: 100px;
+}
+.projects_txt {
+	position: fixed;
+	text-align: center;
 	vertical-align: middle;
+	z-index: 2;
+	-webkit-perspective:1200px;
+	perspective:1200px;
+}
+.project_name {
+	font-size: 30px;
+	margin-top: 40px;
+}
+.project_info {
+	margin-top: 20px;
+	font-size: 25px;
+	padding: 20px;
 }
 .skill_level {
 	position: relative;
@@ -306,32 +337,6 @@ html,body{
 	-moz-transform-origin:right;
 	-ms-transform-origin:right;
 	transform-origin:right
-}
-.interests_back1 {
-	position: fixed;
-	top: 150px;
-	left: 300px;
-	background-color: blue;
-	height: 400px;
-	width: 500px;
-	border-radius: 100px;
-	z-index: 1;
-}
-/*#interest_title {
-	font-size: 40px;
-	margin-top: 15px;
-	margin-bottom: 20px;
-	text-align: center;
-}*/
-.interests_txt {
-	z-index: 2;
-	right: 0;
-	font-size: 25px;
-	color: white;
-	margin-left: 15px;
-	line-height: 10px
-	-webkit-perspective:1200px;
-	perspective:1200px;
 }
 .btns{
 	position:fixed;

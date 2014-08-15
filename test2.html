@@ -14,11 +14,13 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 	
 	
 	<!-- <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" /> -->
 	<link rel="stylesheet" href="./CSS/comp.css" type="text/css" media="screen" />
+
+	<!-- <script type="text/javascript" src="Javascript/script.js"></script> -->
 	  
 	<!--************ analytics ************-->
 	<script type="text/javascript">
@@ -69,11 +71,11 @@
 
 		<!-- DESKTOP HEADER -->
 		<!-- WHERE THE OPENING PAGE WILL BE -->
- 		<ul id="desk_header" class="header">
+ 		<ul class="header">
  			<!-- <li id="headshot" data-0="opacity:1;top:-75px;" data-200="opacity:0;top:-120px " style="background-image:url(./images/photo.png);"></li> -->
- 			<li id="me" data-0="opacity:1;top:-75px;" data-200="opacity:0;top:-120px "><h1>Jim Yu</h1></li>
- 			<li data-0="opacity:1;top:-75px;" data-200="opacity:0;top:-120px"><hr></li>
- 			<li id="about" data-0="opacity:1;top:-75px;" data-200="opacity:0;top:-120px "><p>Computer Science Undergraduate</p></li>
+ 			<li id="me" data-0="opacity:1;" data-200="opacity:0;"><h1>Jim Yu</h1></li>
+ 			<li data-0="opacity:1;" data-200="opacity:0;"><hr id="name_break"></li>
+ 			<li id="about" data-0="opacity:1;" data-200="opacity:0;"><p>Computer Science Undergraduate</p></li>
 		</ul>
 		
 		<!--******* INTERESTS **************-->
@@ -96,107 +98,74 @@
 		<!--******* PROJECTS **************-->
 
 		<div class="flip_title" data-1900="transform:rotateY(-180deg) scale(1,1);opacity:0;" data-2200="transform:rotateY(0deg) scale(1,1);opacity:1;" data-3800="transform:rotateY(0deg) scale(1,1);" data-4100="transform:rotateY(0deg) scale(0,0);" style="background-image:url(./images/project2.jpg);"></div>
-		<div class="project project1" data-2200="transform:scale(0,0);" data-2700="transform:scale(1,1);" data-3800="transform:scale(1,1);" data-4100="transform:scale(1,1);">
-			<ul class="projects_txt" "txt" data-2200="transform:rotate(0deg);opacity:0" data-2700="transform:rotate(720deg);opacity:1" data-3800="transform:rotate(720deg);opacity:1" data-4100="transform:rotate(0deg);opacity:0">
+		<div class="project project1" data-2200="transform:scale(0,0);" data-2700="transform:scale(1,1);" data-3800="transform:scale(1,1);" data-4100="transform:scale(0,0);">
+			<ul class="projects_txt" "txt" data-2200="transform:rotate(0deg);opacity:0" data-2700="transform:rotate(720deg);opacity:1" data-3800="transform:rotate(720deg);opacity:1" data-4100="transform:rotate(0deg);opacity:0;">
 				<li class="project_name">NAME</li>
 				<li class="project_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in elit placerat, congue turpis eget, convallis lacus. Nunc in nisi at augue blandit fringilla. Integer non ipsum a est cursus ornare.</li>
 			</ul>
 		</div>
-		<div class="project project2" data-2300="transform:scale(0,0);" data-2800="transform:scale(1,1);" data-3800="transform:scale(1,1);" data-4100="transform:scale(1,1);">
-			<ul class="projects_txt" "txt" data-2300="transform:rotate(0deg);opacity:0" data-2800="transform:rotate(720deg);opacity:1" data-3800="transform:rotate(720deg);opacity:1" data-4100="transform:rotate(0deg);opacity:0">
+		<div class="project project2" data-2300="transform:scale(0,0);" data-2800="transform:scale(1,1);" data-3800="transform:scale(1,1);" data-4100="transform:scale(0,0);">
+			<ul class="projects_txt" "txt" data-2300="transform:rotate(0deg);opacity:0" data-2800="transform:rotate(720deg);opacity:1" data-3800="transform:rotate(720deg);opacity:1" data-4100="transform:rotate(0deg);opacity:0;">
 				<li class="project_name">NAME</li>
 				<li class="project_info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque in elit placerat, congue turpis eget, convallis lacus. Nunc in nisi at augue blandit fringilla. Integer non ipsum a est cursus ornare.</li>
 			</ul>
 		</div>
-		<div class="more"></div>
-		<!-- <div class="round round_orange" data-2000="transform:scale(0,0);" data-2700="transform:scale(1,1);" data-3800="transform:scale(1,1);" data-4100="transform:scale(0,0);">
-			<ul class="projects_txt" "txt">
-				<li class="project_info" data-2000="transform:rotate(0deg);opacity:0" data-2700="transform:rotate(720deg);opacity:1" data-3800="transform:rotate(720deg);opacity:1" data-4100="transform:rotate(0deg);opacity:0">COMING SOON</li>
-			</ul>
-		</div> -->	
+		<!-- <div class="more"></div> -->
 		
 				
 		<!--******* RESUME **************-->
 
-		<!-- <div class="rect" data-4100="transform:rotateY(90deg);opacity:0;" data-4900="transform:rotateY(0deg);opacity:1" data-5700="transform:rotateY(0deg);opacity:1;" data-6000="transform:rotateY(90deg);opacity:0">
-			<p id="title">Skills</p>
-			<p id="small_title">Coding Languages</p>
-			<ul class="skill_level" "txt">
-				<li>Python</li>
-				<li>Java</li>
-				<li>C++</li>
-				<li>OCaml</li>
-				<li>HTML</li>
-				<li>JavaScript</li>
-			</ul>
-			<p id="small_title">Software</p>
-			<ul class="skill_level" "txt">
-				<li>Eclipse</li>
-				<li>LaTeX</li>
-				<li>Android Development Studio</li>
-				<li>Quartus II</li>
-			<p id="small_title">Operating Systems</p>
-			<ul class="skill_level" "txt">
-				<li>Windows</li>
-				<li>Ubuntu</li>
-			</ul>
-		</div> -->
-		<!-- <div class="levels" data-4100="transform:translateX(300px);opacity:0;" data-4900="transform:traslateX(0px);opacity:1;" data 5700="transform:"
-		<div class="ver white_ver" data-4200="right:-95%" data-5200="right:-60%"  data-5700="right:-60%"  data-5900="right:-80%" data-6500="right:125%"></div>
-		<div class="line strawberry_line" data-4500="height:0%;top:0;" data-5500="height:100%;" data-5700="top:0%;" data-6000="top:100%;"></div> -->
-		
-		
-		<ul class="frames_con" id="strawberry_desk" data-4100="opacity:0;" data-4200="opacity:1;" data-5800="opacity:1;transform:rotate(0deg);top:0%" data-6000="transform:rotate(-90deg);top:-100%;opacity:0;">
-			<li data-4200="opacity:1;" data-4201="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_0.png);"></span>
-			</li>
-			<li data-4200="opacity:0;" data-4201="opacity:1;" data-4300="opacity:1;" data-4301="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_1.png);"></span>
-			</li>
-			<li data-4300="opacity:0;" data-4301="opacity:1;" data-4400="opacity:1;" data-4401="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_2.png);"></span>
-			</li>
-			<li data-4400="opacity:0;" data-4401="opacity:1;" data-4500="opacity:1;" data-4501="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_3.png);"></span>
-			</li>
-			<li data-4500="opacity:0;" data-4501="opacity:1;" data-4600="opacity:1;" data-4601="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_4.png);"></span>
-			</li>
-			<li data-4600="opacity:0;" data-4601="opacity:1;" data-4700="opacity:1;" data-4701="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_5.png);"></span>
-			</li>
-			<li data-4700="opacity:0;" data-4701="opacity:1;" data-4800="opacity:1;" data-4801="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_6.png);"></span>
-			</li>
-			<li data-4800="opacity:0;" data-4801="opacity:1;" data-4900="opacity:1;" data-4901="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_7.png);"></span>
-			</li>
-			<li data-4900="opacity:0;" data-4901="opacity:1;" data-5000="opacity:1;" data-5001="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_8.png);"></span>
-			</li>
-			<li data-5000="opacity:0;" data-5001="opacity:1;" data-5100="opacity:1;" data-5101="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_9.png);"></span>
-			</li>
-			<li data-5100="opacity:0;" data-5101="opacity:1;" data-5200="opacity:1;" data-5201="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_10.png);"></span>
-			</li>
-			<li data-5200="opacity:0;" data-5201="opacity:1;" data-5300="opacity:1;" data-5301="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_11.png);"/>
-			</li>
-			<li data-5300="opacity:0;" data-5301="opacity:1;" data-5400="opacity:1;" data-5401="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_12.png);"></span>
-			</li>
-			<li data-5400="opacity:0;" data-5401="opacity:1;" data-5500="opacity:1;" data-5501="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_13.png);"></span>
-			</li>
-			<li data-5500="opacity:0;" data-5501="opacity:1;" data-5600="opacity:1;" data-5601="opacity:0;">
-				<span style="background-image:url(css/img/strawberry_14.png);"></span>
-			</li>	
-			<li data-5600="opacity:0;" data-5601="opacity:1;" data-5700="opacity:1;">
-				<span style="background-image:url(css/img/strawberry_15.png);"></span>
-			</li>
-		</ul>
-	
+		<hr class="divide" data-4500="transform:rotateZ(90deg) scale(0,0);" data-4800="transform:rotateZ(90deg) scale(1,1);" data-5700="transform:rotateZ(90deg) scale(1,1);" data-6000="transform:rotateZ(90deg) scale(0,0);">
+		<div class="work_side">
+			<div class="title exp" data-4200="transform:translateX(0px);opacity:0;" data-4500="transform:translateX(-300px);opacity:1;" data-5900="transform:translateX(-300px);opacity:1;" data-6000="transform:translateX(0px);opacity:0;">Work Experience</div>
+		</div>
+		<div class="skill_side">
+			<div class="title skill" data-4200="transform:translateX(0px);opacity:0;" data-4500="transform:translateX(300px);opacity:1;" data-5900="transform:translateX(300px);opacity:1;" data-6000="transform:translateX(0px);opacity:0;">Skills</div>
+			<div id="languages" data-4100="transform:rotateY(90deg);opacity:0;" data-4900="transform:rotateY(0deg);opacity:1" data-5700="transform:rotateY(0deg);opacity:1;" data-6000="transform:rotateY(90deg);opacity:0">
+				<p class="small_title">Coding Languages</p>
+				<ul class="skill_txt" "txt">
+					<li>Python</li>
+					<li>Java</li>
+					<li>C</li>
+					<li>C++</li>
+					<li>OCaml</li>
+				</ul>
+			</div>
+			<div id="webdev" data-4100="transform:rotateY(90deg);opacity:0;" data-4900="transform:rotateY(0deg);opacity:1" data-5700="transform:rotateY(0deg);opacity:1;" data-6000="transform:rotateY(90deg);opacity:0">
+				<p class="small_title">Web Development</p>
+				<ul class="skill_txt" "txt">
+					<li>HTML</li>
+					<li>JavaScript</li>
+					<li>jQuery</li>
+					<li>PHP</li>
+					<li>Django</li>
+				</ul>
+			</div>
+			<div id="software" data-4100="transform:rotateY(90deg);opacity:0;" data-4900="transform:rotateY(0deg);opacity:1" data-5700="transform:rotateY(0deg);opacity:1;" data-6000="transform:rotateY(90deg);opacity:0">
+				<p class="small_title">Software</p>
+				<ul class="skill_txt" "txt">
+					<li>Eclipse</li>
+					<li>LaTeX</li>
+					<li>Android Development Studio</li>
+					<li>Quartus II</li>
+				</ul>
+			</div>
+			<div id="vcs" data-4100="transform:rotateY(90deg);opacity:0;" data-4900="transform:rotateY(0deg);opacity:1" data-5700="transform:rotateY(0deg);opacity:1;" data-6000="transform:rotateY(90deg);opacity:0">
+				<p class="small_title">VCS</p>
+				<ul class="skill_txt" "txt">
+					<li>Git</li>
+					<li>Subversion</li>
+				</ul>
+			</div>
+			<div id="systems" data-4100="transform:rotateY(90deg);opacity:0;" data-4900="transform:rotateY(0deg);opacity:1" data-5700="transform:rotateY(0deg);opacity:1;" data-6000="transform:rotateY(90deg);opacity:0">
+				<p class="small_title">Operating Systems</p>
+				<ul class="skill_txt" "txt">
+					<li>Windows</li>
+					<li>Ubuntu</li>
+				</ul>
+			</div>
+		</div>
+
 		<!-- FOOTER DESKTOP
 		<ul class="footer" id="desk_footer">
 			<li class="footer_last" data-6000="opacity:0;top:-800px;" data-6300="opacity:1;top:-185px" style="background-image:url(css/img/eat.png);"></li>
@@ -213,9 +182,6 @@
 				<h2>Contact me</h2>
 					<!-- AddThis Button BEGIN -->
 					<div class="addthis_toolbox addthis_default_style ">
-					<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-					<a class="addthis_button_tweet"></a>
-					<a class="addthis_button_pinterest_pinit"></a>
 					</div>
 					<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5175ccdd68585d1b"></script>
